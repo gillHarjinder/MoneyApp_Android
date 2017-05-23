@@ -23,5 +23,15 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
+        //Create a button which open the Category_Activity from main screen
+        Button addBtn = (Button)findViewById(R.id.add_Button);
+        addBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, add_Activity.class));
+            }
+        });
+
+
     }
 }
