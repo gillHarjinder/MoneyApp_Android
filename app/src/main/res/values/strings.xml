@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">MoneyApp_Android</string>
+    <string name="Category_prompt">Choose Category</string>
+    <string-array name="category_arrays">
+        <item>Income</item>
+        <item>Re-ocuuring Income</item>
+        <item>Expanses</item>
+        <item>Re-occuring Expanses</item>
+    </string-array>
 </resources>
