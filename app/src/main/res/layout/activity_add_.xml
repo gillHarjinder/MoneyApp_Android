@@ -8,127 +8,140 @@
     tools:layout_editor_absoluteY="89dp"
     tools:layout_editor_absoluteX="0dp">
 
-    <RelativeLayout
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        tools:layout_editor_absoluteX="29dp"
-        tools:layout_editor_absoluteY="-27dp">
+    <TextView
+        android:id="@+id/income_description_ID"
+        android:layout_width="175dp"
+        android:layout_height="33dp"
+        android:layout_marginLeft="8dp"
+        android:fontFamily="casual"
+        android:text="Description"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.093"
+        android:layout_marginBottom="7dp"
+        app:layout_constraintBottom_toTopOf="@+id/Description_text" />
 
-    </RelativeLayout>
+    <EditText
+        android:id="@+id/amount_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:ems="10"
+        android:inputType="number|numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/income_description_ID"
+        app:layout_constraintHorizontal_bias="0.117"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
 
-    <ToggleButton
-        android:id="@+id/Income_Expance_ID"
+    <TextView
+        android:id="@+id/income_amount_ID"
+        android:layout_width="102dp"
+        android:layout_height="33dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:fontFamily="casual"
+        android:text="Amount"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="24sp"
+        app:layout_constraintHorizontal_bias="0.063"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/amount_num" />
+
+    <TextView
+        android:id="@+id/incomeName_ID"
+        android:layout_width="82dp"
+        android:layout_height="31dp"
+        android:fontFamily="casual"
+        android:text="Name"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="24sp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginBottom="7dp"
+        app:layout_constraintBottom_toTopOf="@+id/name_text"
+        app:layout_constraintHorizontal_bias="0.062" />
+
+    <EditText
+        android:id="@+id/name_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintHorizontal_bias="0.117"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/income_amount_ID" />
+
+    <EditText
+        android:id="@+id/Description_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="0.117"
+        android:layout_marginBottom="44dp"
+        app:layout_constraintBottom_toTopOf="@+id/one_timeOR_repeat" />
+
+    <TextView
+        android:id="@+id/textView20"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginTop="8dp"
-        android:text="ToggleButton"
-        android:textOff="Income"
-        android:textOn="Expance"
+        android:fontFamily="casual"
+        android:text="Income"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="24sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
         android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/name_Id"
-        app:layout_constraintVertical_bias="0.272"
-        app:layout_constraintHorizontal_bias="0.464" />
-
-    <TextView
-        android:id="@+id/name_Id"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Name"
-        android:textAppearance="@style/TextAppearance.AppCompat.Button"
-        android:textSize="18sp"
-        android:layout_marginLeft="8dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginRight="8dp"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintHorizontal_bias="0.066"
-        android:layout_marginBottom="11dp"
-        app:layout_constraintBottom_toTopOf="@+id/name_text" />
-
-    <EditText
-        android:id="@+id/name_text"
-        android:layout_width="244dp"
-        android:layout_height="41dp"
-        android:layout_marginBottom="70dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/amount_ID"
-        app:layout_constraintHorizontal_bias="0.169"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent" />
-
-    <TextView
-        android:id="@+id/amount_ID"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="12dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:text="Amount"
-        android:textAppearance="@style/TextAppearance.AppCompat.Button"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/editText10"
-        app:layout_constraintHorizontal_bias="0.071"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent" />
-
-    <TextView
-        android:id="@+id/textView16"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="$"
-        android:textSize="30sp"
-        android:layout_marginLeft="29dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginBottom="61dp"
-        app:layout_constraintBottom_toTopOf="@+id/toggleButton8" />
-
-    <EditText
-        android:id="@+id/editText10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="number|numberDecimal"
-        app:layout_constraintLeft_toRightOf="@+id/textView16"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginBottom="57dp"
-        app:layout_constraintBottom_toTopOf="@+id/toggleButton8"
-        app:layout_constraintHorizontal_bias="0.0" />
+        app:layout_constraintBottom_toTopOf="@+id/incomeName_ID"
+        app:layout_constraintVertical_bias="0.727" />
 
     <ToggleButton
-        android:id="@+id/toggleButton8"
-        android:layout_width="195dp"
-        android:layout_height="50dp"
+        android:id="@+id/one_timeOR_repeat"
+        android:layout_width="199dp"
+        android:layout_height="48dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:text="ToggleButton"
         android:textOff="One-Time"
-        android:textOn="Re-Ocurring"
+        android:textOn="Repeat"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginBottom="32dp"
-        app:layout_constraintBottom_toTopOf="@+id/button"
-        app:layout_constraintHorizontal_bias="0.502" />
+        app:layout_constraintHorizontal_bias="0.502"
+        android:layout_marginBottom="39dp"
+        app:layout_constraintBottom_toTopOf="@+id/add_button_ID" />
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="109dp"
-        android:layout_height="50dp"
-        android:text="Button"
-        android:layout_marginRight="8dp"
-        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/add_button_ID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
         android:layout_marginLeft="8dp"
-        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        android:text="ADD"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginBottom="49dp"
-        tools:layout_editor_absoluteY="412dp" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
 
 </android.support.constraint.ConstraintLayout>
